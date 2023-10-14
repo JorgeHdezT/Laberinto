@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.end {
+    background-color: green;
+}
+
+.player {
+    background-color: dodgerblue;
+}
+
+.wall {
+    background-color: black;
+}
+
+.direction-button {
+    background-color: dodgerblue; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 3px 0px #0056b3;
+}
+
+.direction-button:hover {
+    background-color: #003d7e; 
+    box-shadow: 5px 3px 0px #001f3f;
+
+}
